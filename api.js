@@ -15,6 +15,7 @@ require('./endpoints/weather')(app);
 require('./endpoints/local')(app);
 require('./endpoints/sensor')(app);
 require('./endpoints/admin')(app);
+require('./endpoints/health')(app);
 require('./endpoints/end')(app); // must be last
 
 app.listen(process.env.PORT, () => {
